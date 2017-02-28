@@ -1,0 +1,323 @@
+body{
+    /*background:url("drawable/laptop.jpg") fixed;*/
+    width:100vw;
+    overflow-x:hidden;
+    margin:0px;
+    font-family:'Roboto';
+}
+/*---------------------------------------------------------*/
+
+leftnav{
+    width:20vw;
+    height:100vh;
+    /*background:#4f1c6b;*/
+    background:url('../drawable/leftnew.jpg');
+    background-size:contain;
+    display:block;
+    position:fixed;
+    left:0;
+    top:0;
+    overflow-x:scroll;
+}
+
+content{
+    margin-left:20vw;
+    display:block;
+}
+
+
+
+.filePanel table{
+    width:100%;
+    color:white;
+    margin-bottom:30px;
+}
+.filePanel table td{
+    border-bottom: 1px solid #eee;
+    padding:8px;
+}
+
+.filePanel table th{
+    background:#003366;
+    text-align: left;
+    padding:8px;
+    font-variant: small-caps;
+}
+
+.filePanel table td input[type=text]{
+    background:transparent;
+    color:white;
+    border:none;
+    width:100%;
+}
+.filePanel table td input[type=text]:focus{
+    border-bottom:1px solid #eee;
+    outline:none;
+}
+
+
+content table tr:hover{
+    /*background:white;*/
+    background-color:#0099cc;
+    /*color:#37474f;*/
+}
+
+.filePanel .fa{
+    display:block;
+    cursor:pointer;
+    text-align: center;
+}
+
+
+
+/*-----------------------------------------------------------*/
+content header h1{
+    margin:0px;
+    font-family:roboto;
+    color:#37474f;
+}
+header{
+    padding:10px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    color:#888;
+}
+
+.bluePanel{
+    background:teal;
+    color:white;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    padding:10px;
+    margin:8px;
+}
+
+p.panelTitle{
+    background:#006666;
+    color:white;
+    margin-top:-10px;
+    margin-left:-10px;
+    margin-right:-10px;
+    padding:10px;
+    border-radius:5px;
+    font-variant: small-caps;
+    
+}
+
+.bluePanel select,.bluePanel input{
+    border:none;
+    background:transparent;
+    border-bottom:1px dotted white;
+    color:white;
+    padding:10px;
+    background:teal;
+}
+
+.bluePanel input[type='submit']{
+    background:white;
+    color:teal;
+    
+}
+
+input:focus{
+    outline:none;
+}
+
+
+.filePanel{
+    background:#37474f;
+    padding:10px;
+    margin:5px;
+}
+
+.uploadPanel{
+    padding:10px;
+    margin:5px;
+}
+.selectionPanel{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin:10px auto;
+}
+
+.selectionPanel select{
+    padding:5px;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+    margin:auto 5px;
+}
+
+
+
+/*----LEVEL-3---------*/
+
+@media only screen and (max-width:768px){
+    content{
+        margin-left:0px;
+    }
+    leftnav{
+       overflow:hidden;
+    }
+    
+}
+
+/*CSS
+    -COMPONENTS
+    -ELEMENTS
+*/
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   -moz-appearance: none;
+       appearance: none;
+
+  width: 250px;
+  height: 40px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    background:#0099cc;
+}
+
+.uploadPanel{
+    
+}
+
+.upFile{
+    padding:10px 30px;
+    background:white;
+    color:#37474f;
+}
+
+.upFile:active{
+    box-shadow:5px 5px 5px #888 inset;
+}
+.btn{
+    color:teal;
+    background:white;
+    padding:8px;
+    margin:8px auto;
+    display:block;
+}
+    
+
+
+@media only screen and (max-width:768px){
+    body{
+        width:100vw;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x:hidden;
+    }
+    table{
+        width:100vw;
+        overflow-x:hidden;
+    }
+    leftnav{
+        position:relative;
+        -webkit-box-ordinal-group:3;
+            -ms-flex-order:2;
+                order:2;
+        width:100%;
+        height:auto;
+        z-index:99999;
+    }
+    content{
+        -webkit-box-ordinal-group:2;
+            -ms-flex-order:1;
+                order:1;
+    }
+    table{
+        overflow-x:auto;
+    }
+    .bluePanel{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        width:auto;
+    }
+    #addSectionForm,#addSubjectForm{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width:100%;
+    }
+    
+    .bluePanel input,.bluePanel select{
+        margin:10px auto;
+        
+    }
+    #addSectionForm input,#addSectionForm input{
+        
+    }
+}
+
+notice{
+    background:rgba(255,255,255,0.5);
+    padding:15px 5px;
+    display:block;
+    margin:5px auto;
+}
+notice button{
+    padding:10px 15px;
+    background:white;
+    color:teal;
+    border:none;
+    cursor:pointer;
+}
+notice button:hover{
+   box-shadow: 5px 5px 5px #888 inset;    
+}
+
+.vollist ul{
+    color:white;
+}
+.vollist li{
+    display:inline-block;
+    padding:8px;
+    margin:4px;
+    background:#0099cc;
+    list-style: none;
+}
+.delete{
+    padding:8px;
+    background:white;
+    color:teal;
+    border:none;
+    cursor:pointer;
+    
+}
+.delete:hover{
+    background:teal;
+    color:white;
+}

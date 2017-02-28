@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+} 
+body{
+    margin:0px;
+    overflow-x:hidden;
+    width:100vw;
+    font-family: 'Roboto';
+}
+
+::selection {
+   color:white;
+   background-color:teal;
+} 
+
+
+/*-----------------------------------------------------*/
+leftnav{
+    background:url('../drawable/leftnew.jpg');
+    background-size: contain;
+    height:100vh;
+    position:fixed;
+    width:16.667%;
+    overflow-x:hidden;
+}
+
+.loginForm{
+    display:block;
+    border-bottom:1px solid white;
+    /*margin:8px;*/
+}
+.loginForm input,.loginForm .btn{
+    color:white;
+    background:transparent;
+    padding:8px;
+    margin:8px auto;
+    
+    display:block;
+    /*width:3px;*/
+}
+
+.loginForm .btn{
+    background:white;
+    color:teal;
+    margin:8px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+/*---------------------------------------------------*/
+header h1{
+   margin:0px;
+}
+
+header img{
+    max-width:50px;
+}
+
+navbox{
+    background:#eee;
+    text-align:center;
+    text-transform: uppercase;
+}
+navbox.active{
+    background:teal;
+    color:white;
+}
+
+stats{
+    display:flex;
+    justify-content:space-around;
+    padding:10px;
+    background:white;
+}
+statbox{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border-right:2px solid black;
+    padding:10px;
+    width:available;
+    flex:1;
+    height:150px;
+    
+}
+statbox:last-child{
+    border:none;
+}
+statbox number{
+    font-size:2.5em;
+    font-family:'Baskerville Old Face';
+}
+statbox category{
+    font-size:1.5em;
+    font-family:'agency fb';
+  
+}
+
+
+.fileList p{
+    color:black;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+    margin-top:0;
+}
+
+.sectionCell{
+    text-transform: uppercase;
+}
+.sectionCell:hover{
+    background:white;
+    color:black;
+}
+
+.fileList a{
+    padding:auto 50px;
+}
+p.staff{
+    padding:5px;
+    background-color:#888;
+    color:white;
+    margin:10px;
+}
+
+.fileList table{
+    width:100%;
+}
+.fileList tr{
+    /*background:#eee;*/
+    /*background:#eee;*/
+    
+}
+
+.fileList tr:hover{
+    background-color:#eee;
+}
+.fileList td{
+    padding:5px;
+    border-bottom: 1px solid #eee;
+}
+
+.fileList td span{
+    display:block;
+    color:black;
+    text-align:center;
+    
+}
+
+notice{
+    background:rgba(255,255,255,0.5);
+    padding:15px 5px;
+    display:block;
+    margin:5px auto;
+}
+
+/*    content header{
+        display:flex;
+    }*/
+
+
+/*Openclose elemeenst*/
+openclose{
+    
+    width:35px;
+    display:block;
+    margin-right:10px;
+}
+bar{
+    margin:5px auto;
+    width:35px;
+    height:5px;
+    display:block;
+    background:#888;
+    transition: 0.5s;
+}
+
+.active bar:first-child{
+    transform:translate(0,10px) rotateZ(45deg);
+}
+.active bar:last-child{
+    transform: translate(0,-10px) rotateZ(-45deg);
+}
+.active bar:nth-child(2){
+    opacity:0;
+}
+.slideshow img{
+    display:none;
+}
+
+
+close{
+    padding:10px;
+    cursor:pointer;
+    border:2px solid #eee;
+    
+}
+
+close:hover{
+    background:white;
+    color:black;
+}
+/*================*/
+footer{
+    background:#000;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    margin-top:300px;
+}
+
+footer span{
+    display: inline-block;
+    padding:8PX;
+    cursor:pointer;
+}
+
+@media only screen and (max-width:768px){
+    body{
+        width:100vw;
+        overflow-x:hidden;
+    }
+    leftnav{
+        position:relative;
+        z-index:888;
+        width:100%;
+        height:auto;
+        margin-top:60x;
+        
+    }
+    content{
+        order:1;
+    }
+    leftnav{
+        order:2;
+    }
+    
+    .w3-animate-right{
+        animation-duration:0s;
+    }
+    navbox{
+        display:none;
+    }
+    navbox.active{
+        display:block;
+        width:100%;
+    }
+    header.affix{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index:997;
+        background:white;
+        
+    }
+    footer{
+        margin-top:10px;
+    }
+ 
+}

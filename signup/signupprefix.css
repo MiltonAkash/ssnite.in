@@ -1,0 +1,66 @@
+body{
+    margin:0px;
+    background:url('../drawable/narasimaTree.jpg') fixed;
+    /*height:100vh;*/
+}
+
+input,select{
+    padding:8px;
+    margin-top:20px;
+    border:none;
+}
+
+form [type=submit]{
+    display: inline-block;
+    box-shadow:5px 5px 5px #000;
+}
+form [type=submit]:hover{
+    background:teal;
+    color:white;
+}
+
+form [type=submit]{
+    cursor:pointer;
+}
+form [type=submit]:active{
+    box-shadow:5px 5px 5px #000 inset;
+}
+form{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    width:500px;
+    margin-left:auto;
+    margin-right:200px;
+    margin-top:200px;
+    /*margin:auto;*/
+    -webkit-transition:1s;
+    transition: 1s;
+    background-color:rgba(56,98,88,0.7);
+    color:white;
+    padding:10px;
+    box-shadow:0px 0px 50px #000;
+    position:relative;
+}
+
+alert{
+    background:#ff3366;
+    color:white;
+    font-size:1.5em;
+    margin:10vw;
+    display:block;
+    border-radius: 5px;
+    opacity:0.8;
+    padding:10px;
+}
+
+@media only screen and (max-width:768px){
+    form{
+        width:80vw;
+        margin:10vw;
+    }
+}

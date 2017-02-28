@@ -1,0 +1,139 @@
+body{
+    /*background:url("drawable/laptop.jpg") fixed;*/
+    width:100vw;
+    overflow-x:hidden;
+    margin:0px;
+}
+/*----------------------------------------------------------*/
+leftnav{
+    width:20vw;
+    height:100vh;
+    /*background:#4f1c6b;*/
+    background:url('../drawable/leftn.jpg');
+    background-size:contain;
+    display:block;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+
+content{
+    margin-left:20vw;
+    display:block;
+}
+
+/*------------------------------------------------------------*/
+
+content table{
+    background:white;
+    width:100%;
+}
+
+content tr:nth-child(odd){
+    background:#eee;
+   
+}
+content tr:hover{
+    background:violet;
+}
+content td{
+    padding:10px;
+}
+
+/*----------------------------------------------------------------*/
+
+content header h1{
+    margin:0px;
+}
+/*header{
+    padding:10px;
+    display:flex;
+    align-items:center;
+    background:white;
+    color:#888;
+}*/
+
+h1{display: inline-block;}
+/*---------------------------------------------------------------------*/
+#select-content{display:flex;}
+#select-content select{flex:1;padding:10px;background-color:transparent;margin:10px;border-radius:5px;}
+#select-content select:focus{outline:none;}
+#content{display:flex;background:#006699;}
+
+/*---------------------------------------------------------------------*/
+
+close{
+    padding:10px;
+    width:available;
+    border:1px solid #eee;
+}
+close:hover{
+    background: #eee;
+    color:black;
+}
+
+
+@media only screen and (max-width:768px){
+    content{
+        margin-left:0px;
+    }
+    leftnav{
+       overflow:hidden;
+    }
+    
+}
+
+/*CSS
+    -COMPONENTS
+    -ELEMENTS
+*/
+
+
+
+
+/*slidenavigaiton*/
+slidenav{
+    display:flex;
+    width:100%;
+    background:green;
+    /*justify-content: space-around;*/
+}
+navbox{
+    flex:1;
+    background:#eee;
+    padding:10px;
+}
+navbox.active,navbox:hover{
+    background:#6600cc;
+}
+
+/*btn*/
+.btn{
+    padding:10px;
+    background:white;
+    color:#4f1c6b;
+    border:none;
+}
+.btn:hover{
+/*    background:#4f1c6b;
+    color:white;*/
+    box-shadow:5px 5px 5px #000;
+    
+}
+leftnav form{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    color:white;
+}
+input{
+    background:transparent;
+    color:white;
+    padding:10px;
+    margin:10px;
+    border:2px solid white;
+}
+label{
+    margin:auto 10px;
+}

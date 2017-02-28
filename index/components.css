@@ -1,0 +1,32 @@
+/*Openclose elemeenst*/
+openclose{
+    width:35px;
+    display:block;
+    margin-right:10px;
+}
+bar{
+    margin:5px auto;
+    width:35px;
+    height:5px;
+    display:block;
+    background:#888;
+    transition: 0.5s;
+}
+
+.active bar:first-child{
+    transform:translate(0,10px) rotateZ(45deg);
+}
+.active bar:last-child{
+    transform: translate(0,-10px) rotateZ(-45deg);
+}
+.active bar:nth-child(2){
+    opacity:0;
+}
+
+
+
+/*Model components*/
+
+
+
+/*stats and thigns*/

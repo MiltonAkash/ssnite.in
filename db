@@ -1,0 +1,62 @@
+Files(FileId,SubjectId,VolunteerId,Section,Name,FileName,Order);
+Subjects(SubjectId,SubjectName);
+Volunteer(Id,Name,Mobile,Password,Mail,reference);
+Sections(Subid,Section);
+
+ssnite(key,value);
+Notification(Notice,To,Type,Read);
+
+
+
+user->usess->goOut
+signup/index.php->
+
+activity
+1.User.login
+2.SIgnup
+
+3.Volunteer panel
+    Primary:
+        1. Add subject
+        2. Add Section
+        3. Upload File
+        4. Display Subject,Section
+        5. Display File for subject,Section
+    
+    Secondary:
+        1.Delete Subject
+        2.Delete Section
+        3.Delete File
+        4.Change File Name
+        5.Change File Section
+        
+    3.2 remove files
+    3.3 accept volunteers
+    3.4 Profile
+    3.5 
+    
+    
+4.Admin panel
+
+0.See what is happening with section
+1.Add delete subject
+2.add delete section
+
+
+1.create profile section in voluntter
+
+
+log(Id,Volid,Oper,Spec);
+
+Oper-ADDSUB-subid
+oper-ADDSEC-secname-subid
+oper-DELSUB-subid
+oper-DELSEC-sec0si
+oper-UPLFILE-filename-sub
+oper-DELFILE-file-sub
+oper-UPDFILE-filename-sub
+oper-ACCVOL-volid
+oper-
+
+
+
